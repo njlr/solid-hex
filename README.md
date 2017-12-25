@@ -1,6 +1,8 @@
 # solid-hex
 
-A simple hexagon library using cube-coordinates ⬡
+A simple hexagon library using cube-coordinates. ⬡
+
+This package is based on code from https://www.redblobgames.com/grids/hexagons/. 
 
 
 ## Install
