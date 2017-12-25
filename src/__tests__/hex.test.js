@@ -9,4 +9,6 @@ test('hex throws for invalid coordinates', () => {
   expect(() => Hex.hex(0, 0, 7)).toThrow();
   expect(() => Hex.hex(3, 1, 1)).toThrow();
   expect(() => Hex.hex(2, 1, 0)).toThrow();
+  expect(() => Hex.hex(NaN, 1)).toThrow();
+  expect(() => Hex.hex(0, NaN)).toThrow();
 });
