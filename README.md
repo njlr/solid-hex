@@ -1,4 +1,4 @@
-# solidhex
+# solid-hex
 
 A simple hexagon library using cube-coordinates ⬡
 
