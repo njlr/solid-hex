@@ -5,9 +5,9 @@
 export const point = (x, y = x) => ({ x, y });
 
 export const hex = (q, r, s = (0 - q - r)) => {
-  console.assert(
-    Math.abs(q + r + s) < 0.0001, 
-    'q (' + q + '), r (' + r + ') and s (' + s + ') must sum to zero');
+  if (Math.abs(q + r + s) > 0.0001) {
+    throw new Error('q (' + q + '), r (' + r + ') and s (' + s + ') must sum to zero');
+  }
   return { q, r };
 };
 
