@@ -1,0 +1,19 @@
+{
+  "name": "solidhex",
+  "version": "1.0.0",
+  "entry": "./src/index.js",
+  "repository": "git@github.com:njlr/solidhex.git",
+  "author": "njlr <njlr@users.noreply.github.com>",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "scripts": {
+    "version": "babel ./src --out-dir ./lib",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^22.0.4",
+    "jest-cli": "^22.0.4"
+  }
+}
