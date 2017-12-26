@@ -1,13 +1,13 @@
 {
   "name": "solid-hex",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "entry": "./src/index.js",
   "repository": "git@github.com:njlr/solid-hex.git",
   "author": "njlr <njlr@users.noreply.github.com>",
   "license": "MIT",
   "main": "./lib/index.js",
   "scripts": {
-    "version": "babel ./src --out-dir ./lib --ignore '**/*.test.js'",
+    "prepublishOnly": "babel ./src --out-dir ./lib --ignore '**/*.test.js'",
     "test": "eslint ./src/index.js && jest"
   },
   "devDependencies": {
