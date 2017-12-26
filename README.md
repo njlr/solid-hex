@@ -8,7 +8,7 @@ This package is based on code from https://www.redblobgames.com/grids/hexagons/.
 ## Install
 
 ```bash=
-yarn add git+ssh://git@github.com:njlr/solid-hex.git
+yarn add solid-hex
 ```
 
 ## Usage
