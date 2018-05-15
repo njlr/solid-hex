@@ -1,5 +1,22 @@
 {
   "presets": [
-    "env"
-  ]
+    [
+      "@babel/preset-env", {
+        "modules": false
+      }
+    ]
+  ], 
+  "plugins": [
+    "@babel/plugin-proposal-pipeline-operator"
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        "@babel/preset-env"
+      ], 
+      "plugins": [
+        "@babel/plugin-proposal-pipeline-operator"
+      ]
+    }
+  }
 }

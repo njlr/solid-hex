@@ -14,11 +14,11 @@ yarn add solid-hex
 ## Usage
 
 ```javascript=
-import * as Hex from 'solid-hex';
+import * as hex from 'solid-hex';
 
-const a = Hex.hex(2, 3);
-const b = Hex.scale(a, 10);
-const c = Hex.lerp(a, b, 0.5);
+const a = hex.hex(2, 3);
+const b = hex.scale(a, 10);
+const c = hex.lerp(a, b, 0.5);
 
 // etc... 
 ```
@@ -28,9 +28,9 @@ This library is designed to work best with the [pipeline operator](https://githu
 ```javascript=
 import * as Hex from 'solid-hex';
 
-const a = Hex.hex(2, 3)
-  |> (_ => Hex.scale(_, 10))
-  |> (_ => Hex.lerp(_, Hex.hex(1, 2), 0.5))
+const a = hex.hex(2, 3)
+  |> hex.scale(10)
+  |> hex.lerp(hex.hex(1, 2), 0.5))
 
 // etc... 
 ```
